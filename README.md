@@ -1,6 +1,6 @@
-# x-render-js | New web solution.
+# x-render-html | New web solution.
 
-> x-render-js - new library, which provide simple and fast function to create html code.
+> x-render-html - new library, which provide simple and fast function to create html code.
 
 ## 📺 Introduction.
 
@@ -17,23 +17,23 @@ Good question. If we turn to the origins of JavaScript, then we will see that th
 You don't have to worry about it. To start, we do this:
 
 ```
-$ npm i x-render-js
+$ npm i x-render-html
 ```
 
 Good. Next:
 
 ```js
-const { generate } = require('x-render-js');
+const { generate } = require('x-render-html');
 
 // or
-import generate from 'x-render-js';
+import generate from 'x-render-html';
 ```
 
 It's all. Simple Example:
 
 ```js
 const app = require('express')();
-const { generate } = require('x-render-js');
+const { generate } = require('x-render-html');
 
 app.get();
 // ...
