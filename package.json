@@ -1,5 +1,5 @@
 {
-  "name": "x-render-js",
+  "name": "x-render-html",
   "version": "1.0.0",
   "description": "Web library for render html or render elements",
   "main": "lib/index.js",
@@ -16,5 +16,10 @@
     "require": "./lib/index.js"
   },
   "author": "Harrison Manxe",
-  "license": "MIT"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/HarrisonManxe/x-render-html"
+  },
+  "homepage": "https://github.com/HarrisonManxe/x-render-html"
 }
