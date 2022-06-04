@@ -1,15 +1,22 @@
 {
   "name": "x-render-html",
-  "version": "1.0.0",
+  "version": "1.1.1",
   "description": "Web library for render html or render elements",
   "main": "lib/index.js",
   "engines": {
     "node": ">=10.0.0"
   },
   "keywords": [
-    "render", "render-js","render-html",
-    "vuejs", "vue", "angular", "angularjs",
-    "react", "reactjs", "jquery"
+    "render",
+    "render-js",
+    "render-html",
+    "vuejs",
+    "vue",
+    "angular",
+    "angularjs",
+    "react",
+    "reactjs",
+    "jquery"
   ],
   "exports": {
     "import": "./lib/index.mjs",

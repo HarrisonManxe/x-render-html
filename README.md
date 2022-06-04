@@ -1,6 +1,6 @@
-# x-render-html | New web solution.
+# x-render-js | New web solution.
 
-> x-render-html - new library, which provide simple and fast function to create html code.
+> x-render-js - new library, which provide simple and fast function to create html code.
 
 ## 📺 Introduction.
 
@@ -17,23 +17,23 @@ Good question. If we turn to the origins of JavaScript, then we will see that th
 You don't have to worry about it. To start, we do this:
 
 ```
-$ npm i x-render-html
+$ npm i x-render-js
 ```
 
 Good. Next:
 
 ```js
-const { generate } = require('x-render-html');
+const { generate } = require('x-render-js');
 
 // or
-import generate from 'x-render-html';
+import generate from 'x-render-js';
 ```
 
 It's all. Simple Example:
 
 ```js
 const app = require('express')();
-const { generate } = require('x-render-html');
+const { generate } = require('x-render-js');
 
 app.get();
 // ...
@@ -76,6 +76,47 @@ console.log(generate('div', {
 console.log(generate('div', {
     textContent: 'hello world!'
 })); // => <div>hello world!</div>
+```
+
+* Integration with express.
+
+> main.js
+
+```js
+const app = require('express')();
+const { Integration } = require('x-render-html');
+
+app.use('view engine', 'ejs');
+
+const _ = new Integration(app);
+
+app.get('/', (req, res) => {
+    _.render('MyEJSTemp', {
+        userId: 1
+    })
+})
+```
+
+> MyEJSTemp.ejs
+
+```html
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Document</title>
+    </head>
+    <body>
+        <div id="root">
+
+        </div>
+
+        <script>
+            const Reflect = <%= Reflect %>
+
+            new Reflect('#root'); //...
+        </script>
+    </body>
+</html>
 ```
 
 ## 📂 Other info.
